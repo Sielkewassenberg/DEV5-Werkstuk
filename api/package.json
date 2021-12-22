@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prod": "start index.js",
+    "start": "nodemon --legacy-watch source/index.js",
+    "test": "jest --watchAll --detect-open-handels",
+    "test-ci": "jest --detect-open-handels --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.2",
+    "jest": "^27.4.5",
+    "knex": "^0.95.15",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1",
+    "supertest": "^6.1.6"
+  }
+}
