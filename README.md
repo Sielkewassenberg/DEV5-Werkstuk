@@ -20,8 +20,9 @@ Het project is nog in development
 Sielke Wassenberg
 # Endpoints
 
-/ : al de verschillende opties te krijgen 
+Wanneer je volgende endpoints invult krijg je: 
 
+/ : al de verschillende opties 
 ```
 [
 "/",
@@ -39,13 +40,119 @@ Sielke Wassenberg
 ---
 /getAll : om al de tabels samen te krijgen
 ```
+[
+{
+"id": 1,
+"product_name": "Kylieskins",
+"product_rating": 5,
+"description": "Blauw",
+"typesID": 1,
+"type": "Oogschaduw"
+},
+{
+"id": 2,
+"product_name": "Kylieskins",
+"product_rating": 8,
+"description": "bruin",
+"typesID": 2,
+"type": "Lippenstift"
+},
+{
+"id": 3,
+"product_name": "Revolve",
+"product_rating": 10,
+"description": "roos",
+"typesID": 3,
+"type": "Foundation"
+}
+]
 
 ```
-
-
+---
 /getAllProducten: om alles van de tabel producten te krijgen
+```
+[
+{
+"id": 1,
+"product_name": "Kylieskins",
+"product_rating": 5,
+"description": "Blauw",
+"typesID": 1
+},
+{
+"id": 2,
+"product_name": "Kylieskins",
+"product_rating": 8,
+"description": "bruin",
+"typesID": 2
+},
+{
+"id": 3,
+"product_name": "Revolve",
+"product_rating": 10,
+"description": "roos",
+"typesID": 3
+}
+]
+```
+---
 /getAllTypes: om alles van de de tabel types te krijgen
-/insertProduct/:name-:rate-:desc : toevoegen van een product in de database 
+```
+[
+{
+"id": 1,
+"type": "Oogschaduw"
+},
+{
+"id": 2,
+"type": "Lippenstift"
+},
+{
+"id": 3,
+"type": "Foundation"
+}
+]
+```
+---
+ /insertProduct/:name-:rate-:desc-:typesID: toevoegen van een product in de database 
+```
+voorbeelden:
+ * http://localhost:3000/insertProduct/Revolve-10-roos-3
+ * http://localhost:3000/insertProduct/Kylieskins-8-bruin-2
+ * http://localhost:3000/insertProduct/Kylieskins-5-Blauw-1
+```
+---  
 /insertType/:type : toevoegen van een types in de database 
-/deleteID/:productId : delete vanuit de database van meegegeven id
-/updateRating/:productId-:newRate : aanpassen van je rating 
+```
+voorbeelden:
+ * http://localhost:3000/insertType/Oogschaduw
+ * http://localhost:3000/insertType/Foundation
+ * http://localhost:3000/insertType/Lippenstift
+ 
+```
+---
+/deleteProduct/:productId : delete uit de database van meegegeven id voor producten
+``` 
+voorbeeld:
+* http://localhost:3000/deleteProduct/1
+```
+--- 
+/deleteType/:typeId: delete delete uit de database van meegegeven id voor types
+``` 
+voorbeeld:
+* http://localhost:3000/deleteType/1
+```
+--- 
+/updateRating/:productId-:newRate: aanpassen van je rating 
+``` 
+voorbeeld:
+* http://localhost:3000/1/8
+```
+--- 
+
+/updateType/:typeId-:newType":aanpassen van je type 
+``` 
+voorbeeld:
+* http://localhost:3000/updateType/1-Liquid%20Oogschaduw
+```
+--- 
