@@ -1,5 +1,4 @@
 "use strict";
-
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -159,10 +158,10 @@ app.get('/updateRating/:productId-:newRate', (req, res) => {
 app.get('/updateType/:typeId-:newType', (req, res) => {
     let typeId = req.params.typeId;
     let newType = req.params.newType;
-    pg('producten').where({
-        typeId: typeId
+    pg('types').where({
+        id: typeId
     }).update({
-        newType: newType
+        type: newType
     }).then(function (result) {
         res.json({
             success: true,
