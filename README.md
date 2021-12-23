@@ -6,12 +6,15 @@ De database en de api zijn aangemaakt via docker.
 
 Het is een project gemaakt voor school. 
 # Set-Up
-Downloaden van mij github. Project openen en naar de integrated terminal gaan van  docker-compose.yml. file. Type hierin command: docker compose up --build 
+Downloaden al mijn bestanden van mijn github repository. Project openen en naar de integrated terminal gaan via  docker-compose.yml. file. Type hierin command: docker compose up --build 
 Hierna moet je twee lijnen zien: tabel product gemaakt en  tabel types gemaakt. 
 Wanneer je deze twee lijnen ziet, is de set-up gelukt. 
+
+vervolgens gebruik je de insert endpoint, om de database aan te vullen. 
+Hierna werken de andere endpoints ook. 
 # Kennis 
- kennis van javascript, docker, postgress, github.  
-# Hulp:
+ Voor dit project moet je kennis hebben van javascript, docker, postgress, github.  
+# Hulp
 Bugs kunnen worden gemeld op github. Onder tags, kan je jou probleem rapporteren. 
 Na 24/12 neem ik afstand van dit project, dan werkt alle hulp via github. 
 # Status
@@ -19,8 +22,7 @@ Het project is nog in development
 # Auteurs 
 Sielke Wassenberg
 # Endpoints
-
-Wanneer je volgende endpoints invult krijg je: 
+Hieronder vind je al de endpoints en wat ze doen.
 
 / : al de verschillende opties 
 ```
@@ -69,7 +71,7 @@ Wanneer je volgende endpoints invult krijg je:
 
 ```
 ---
-/getAllProducten: om alles van de tabel producten te krijgen
+/getAllProducten : om alles van de tabel producten te krijgen
 ```
 [
 {
@@ -96,7 +98,7 @@ Wanneer je volgende endpoints invult krijg je:
 ]
 ```
 ---
-/getAllTypes: om alles van de de tabel types te krijgen
+/getAllTypes : om alles van de de tabel types te krijgen
 ```
 [
 {
@@ -114,7 +116,7 @@ Wanneer je volgende endpoints invult krijg je:
 ]
 ```
 ---
- /insertProduct/:name-:rate-:desc-:typesID: toevoegen van een product in de database 
+ /insertProduct/ :name-:rate-:desc-:typesID: toevoegen van een product in de database 
 ```
 voorbeelden:
  * http://localhost:3000/insertProduct/Revolve-10-roos-3
@@ -137,22 +139,22 @@ voorbeeld:
 * http://localhost:3000/deleteProduct/1
 ```
 --- 
-/deleteType/:typeId: delete delete uit de database van meegegeven id voor types
+/deleteType/:typeId : delete delete uit de database van meegegeven id voor types
 ``` 
 voorbeeld:
 * http://localhost:3000/deleteType/1
 ```
 --- 
-/updateRating/:productId-:newRate: aanpassen van je rating 
+
+/updateRating/:productId-:newRate : aanpassen van je rating 
 ``` 
 voorbeeld:
 * http://localhost:3000/1/8
 ```
 --- 
 
-/updateType/:typeId-:newType":aanpassen van je type 
+/updateType/:typeId-:newType : aanpassen van je type 
 ``` 
 voorbeeld:
 * http://localhost:3000/updateType/1-Liquid%20Oogschaduw
 ```
---- 
