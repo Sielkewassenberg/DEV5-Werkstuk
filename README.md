@@ -18,11 +18,13 @@ Na 24/12 neem ik afstand van dit project, dan werkt alle hulp via github.
 Het project is nog in development
 # Auteurs 
 Sielke Wassenberg
-
 # Endpoints
 
 / : al de verschillende opties te krijgen 
-/getAll : om al de tabels samen te krijgen"
+/getAll : om al de tabels samen te krijgen
+
+ ![img/alles.png] (fotonaam) voor / 
+
 /getAllProducten: om alles van de tabel producten te krijgen
 /getAllTypes: om alles van de de tabel types te krijgen
 /insertProduct/:name-:rate-:desc : toevoegen van een product in de database 
