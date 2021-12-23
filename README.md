@@ -9,12 +9,12 @@ Het is een project gemaakt voor school.
 Downloaden van mij github. Project openen en naar de integrated terminal gaan van  docker-compose.yml. file. Type hierin command: docker compose up --build 
 Hierna moet je twee lijnen zien: tabel product gemaakt en  tabel types gemaakt. 
 Wanneer je deze twee lijnen ziet, is de set-up gelukt. 
-# Kennis: 
+# Kennis 
  kennis van javascript, docker, postgress, github.  
 # Hulp:
 Bugs kunnen worden gemeld op github. Onder tags, kan je jou probleem rapporteren. 
 Na 24/12 neem ik afstand van dit project, dan werkt alle hulp via github. 
-# Status: 
+# Status
 Het project is nog in development
 # Auteurs 
 Sielke Wassenberg
