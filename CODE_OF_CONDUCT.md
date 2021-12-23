@@ -1,5 +1,8 @@
 # code of conduct
-Er mogen geen gemene opmerkingen gemaakt worden. 
+
+## de standaard
+* Alleen maar positieve vibes 
+* Er mogen geen gemene opmerkingen gemaakt worden. 
 Stel jezelf de volgende vragen en beschrijf dit in het document  
 
  
