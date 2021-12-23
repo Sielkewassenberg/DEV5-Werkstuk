@@ -21,9 +21,27 @@ Sielke Wassenberg
 # Endpoints
 
 / : al de verschillende opties te krijgen 
-/getAll : om al de tabels samen te krijgen
 
- ![img] (alles.png) voor / 
+```
+[
+"/",
+"/getAll",
+"/getAllProducten",
+"/getAllTypes",
+"/insertProduct/:name-:rate-:desc-:typesID",
+"/insertType/:type",
+"/deleteProduct/:productId",
+"/deleteType/:typeId",
+"/updateRating/:productId-:newRate",
+"/updateType/:typeId-:newType"
+]
+```
+---
+/getAll : om al de tabels samen te krijgen
+```
+
+```
+
 
 /getAllProducten: om alles van de tabel producten te krijgen
 /getAllTypes: om alles van de de tabel types te krijgen
